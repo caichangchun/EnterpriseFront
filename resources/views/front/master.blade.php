@@ -11,7 +11,7 @@
 <div class="index-header">
     <div class="header-wrapper">
         <div class="header-logo header-item">
-            <img src="http://image.nd.com.cn/www/nd15v1/ndlogo_160525a.png">
+            <h2>华创益网信息技术有限公司</h2>
         </div>
         <div class="header-menu header-item">
             <ul>
