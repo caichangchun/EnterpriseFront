@@ -1,8 +1,9 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>华创益网</title>
+    <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    @yield('link')
 </head>
 <body>
 {{--header begin--}}
@@ -23,6 +24,8 @@
 </div>
 {{--header end--}}
 
+@yield('body')
+
 {{--footer begin--}}
 <div class="index-footer">
     <div class="footer-content">
@@ -31,4 +34,6 @@
 </div>
 {{--footer end--}}
 </body>
+<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+@yield('script')
 </html>
