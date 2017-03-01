@@ -15,8 +15,8 @@
         </div>
         <div class="header-menu header-item">
             <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">介绍</a></li>
+                <li><a href="/">首页</a></li>
+                <li><a href="{{ url('/summary') }}">介绍</a></li>
                 <li><a href="#">动态</a></li>
                 <li><a href="#">联系我们</a></li>
             </ul>
