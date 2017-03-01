@@ -19,22 +19,38 @@
             margin-left: -971px;
             height: 500px;
         }
-        #banner_switch
+        .banner-switch
         {
-            margin-top: 500px;
+            height: 30px;
+            text-align: center;
+
+        }
+        .banner-switch ul
+        {
+            list-style-type: none;
+            height: 100%;
+            display: inline-block;
+            line-height: 30px;
+            margin-top: -30px;
+        }
+        .banner-switch ul li
+        {
+            float: left;
+            margin-left: 10px;
+            cursor: pointer;
+            z-index: 2;
         }
     </style>
     <div id="banner_list" class="banner-list">
         <img class="banner-img" src="/images/1.jpg">
         <img class="banner-img" src="/images/2.jpg">
-
     </div>
-    <div id="banner_switch">
-        <ul style="list-style-type: none; z-index: 2">
-            <li style="float: left; margin-left: 10px; cursor: pointer">1</li>;
-            <li style="float: left; margin-left: 10px; cursor: pointer">2</li>
-            <li style="float: left; margin-left: 10px; cursor: pointer">3</li>
-            <li style="float: left; margin-left: 10px; cursor: pointer">4</li>
+    <div id="banner_switch" class="banner-switch">
+        <ul>
+            <li><i class="fa fa-circle-thin"></i></li>
+            <li><i class="fa fa-circle-thin"></i></li>
+            <li><i class="fa fa-circle-thin"></i></li>
+            <li><i class="fa fa-circle-thin"></i></li>
         </ul>
     </div>
 @endsection
@@ -45,6 +61,7 @@
             var current_img = 0;
             $('.banner-img').each(function () {
                 $(this).hide();
+                $(this).css('z-index',-1);
             })
             $('.banner-img').eq(0).fadeIn(500);
             $('#banner_switch ul li').click(function () {
