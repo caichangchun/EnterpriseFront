@@ -47,8 +47,20 @@
 .summary-container-wrapper{
     width: 1080px;
     margin: auto;
-    padding-top: 15px;
 }
+.summary-container-wrapper div:nth-child(1){
+    background: url(../images/summary-1.jpg) no-repeat;
+    background-size:100%;
+    height:400px;
+}
+.summary-container-wrapper div:nth-child(2){
+    background: url(../images/summary-2.jpg) no-repeat;
+    background-size:100%;
+    height:400px;}
+.summary-container-wrapper div:nth-child(3){
+    background: url(../images/summary-3.jpg) no-repeat;
+    background-size:100%;
+    height:400px;}
 .fixednav{
     position: fixed;
     top:0;
