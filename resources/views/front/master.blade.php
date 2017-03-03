@@ -1,11 +1,9 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta content="width=device-width, initial-scale='${window.devicePixelRatio}', maximum-scale='${window.devicePixelRatio}', user-scalable=0" name="viewport">
+    <meta content="initial-scale='${window.devicePixelRatio}', maximum-scale='${window.devicePixelRatio}', user-scalable=0" name="viewport">
 
     <meta content="yes" name="apple-mobile-web-app-capable">
-
-    <meta content="black" name="apple-mobile-web-app-status-bar-style">    <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     @yield('link')
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
