@@ -50,6 +50,9 @@
                 }
             });
             $('.summary-menu ul li').click(function () {
+                if($(this).css("cursor")=="default"){
+                    return;
+                }
                 $('html, body').animate({
                     scrollTop: $("#"+$(this).attr("target")).offset().top - 100
                 }, 600);
