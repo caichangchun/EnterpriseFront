@@ -44,17 +44,18 @@
         .index-row-1
         {
             width: 100%;
-            background-color: #E2E2E2;
+            background-color: #2F2F2F;
+            float: left;
         }
         .index-row-middle-1
         {
             width: 70%;
-            height: 400px;
+            height: 300px;
             margin-left: 15%;
-            margin-top: -25px;
         }
         .index-row-2
         {
+            clear:both;
             width: 100%;
             background-color: #F6F8FC;
         }
@@ -91,18 +92,22 @@
     </div>
     <div class="index-row-1">
         <div class="index-row-middle-1">
-            <div style="margin-left: 100px">
-                <h3>最新动态</h3>
-                <ul>
-                    
+            <div style="margin: 30px 0 0 150px; color: #a4aaae">
+                <h3 style="font-size: 30px">最新动态</h3>
+                <ul style="text-decoration: none; list-style: none; font-size: 20px;">
+                    <li>华创益网 : 一个有理想的公司</li>
+                    <li>华创益网 : 一个有理想的公司</li>
+                    <li>华创益网 : 一个有理想的公司</li>
+                    <li>华创益网 : 一个有理想的公司</li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="index-row-2">
         <div class="index-row-middle-2">
+            <div style="text-align: left; padding: 20px 0 0 40px;"><h3>我们的服务</h3></div>
             <div class="index-card-item">
-                <div style="width: 100%; display: block; margin-top: 50px;">
+                <div style="width: 100%; display: block; margin-top: 40px;">
                     <i class="fa fa-laptop fa-5x" style="color: dodgerblue"></i>
                 </div>
                 <div style="width: 100%; display: block;">
@@ -110,7 +115,7 @@
                 </div>
             </div>
             <div class="index-card-item">
-                <div style="width: 100%; display: block; margin-top: 50px;">
+                <div style="width: 100%; display: block; margin-top: 40px;">
                     <i class="fa fa-android fa-5x" style="color: dodgerblue"></i>
                 </div>
                 <div style="width: 100%; display: block;">
@@ -118,7 +123,7 @@
                 </div>
             </div>
             <div class="index-card-item">
-                <div style="width: 100%; display: block; margin-top: 50px;">
+                <div style="width: 100%; display: block; margin-top: 40px;">
                     <i class="fa fa-object-group fa-5x" style="color: dodgerblue"></i>
                 </div>
                 <div style="width: 100%; display: block;">
@@ -126,7 +131,7 @@
                 </div>
             </div>
             <div class="index-card-item">
-                <div style="width: 100%; display: block; margin-top: 50px;">
+                <div style="width: 100%; display: block; margin-top: 40px;">
                     <i class="fa fa-globe fa-5x" style="color: dodgerblue"></i>
                 </div>
                 <div style="width: 100%; display: block;">
@@ -145,7 +150,8 @@
             bannerImgInit();
             window.setInterval(function(){
                 bannerImgAutoSwtich();
-                bannerBtnSwitch(current_img)
+                console.log($(document).scrollTop())
+                bannerBtnSwitch(current_img);
             }, 2500);
         })
         $('#banner_switch ul li').click(function bannerClickSwitch() {
